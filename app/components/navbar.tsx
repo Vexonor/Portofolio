@@ -23,7 +23,7 @@ export const Navbar = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
     return (
-        <div id="scrollspy-scrollable-parent-1" className="h-screen overflow-y-auto
+        <div id="scrollspy-scrollable-parent-1" className="h-screen overflow-y-auto overflow-x-hidden
             [&::-webkit-scrollbar]:w-3
             [&::-webkit-scrollbar-track]:rounded-full
             [&::-webkit-scrollbar-track]:bg-charcoal
@@ -50,7 +50,7 @@ export const Navbar = () => {
                 <div id="home" className="h-max lg:h-screen overflow-hidden">
                     <motion.div
                         initial={{ opacity: 0, x: isMobile ? 0 : 300, y: isMobile ? 300 : 0 }}
-                        whileInView={{ opacity: 1, x: 50, y: 0 }}
+                        whileInView={{ opacity: 1, x: isMobile ? 0 : 50, y: isMobile ? 0 : 0 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: false, amount: 0 }}
                     >
