@@ -21,7 +21,7 @@ export const ProjectSection = () => {
     return (
         <div className="grid grid-cols-2 px-5 gap-4">
             <div className="col-span-2 md:mb-5">
-                <h1 className="skew-y-3 w-max mb-5 relative isolation-auto z-10 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full hover:text-white before:-left-full before:hover:left-0 before:rounded-full before:bg-crimson before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700 inline-flex items-center justify-center px-4 py-3 font-bold text-crimson bg-white shadow-sm gap-x-2 hover:bg-gray-50 disabled:opacity-50 text-lg md:text-xl">Project Based Learning Web Development</h1>
+                <h1 className="skew-y-3 w-max mb-5 relative isolation-auto z-10 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full hover:text-white before:-left-full before:hover:left-0 before:rounded-full before:bg-crimson before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700 inline-flex items-center justify-center px-4 py-3 font-bold text-crimson bg-white shadow-sm gap-x-2 hover:bg-gray-50 disabled:opacity-50 text-base md:text-xl">Project Based Learning Web Development</h1>
             </div>
             {/* Project 1 */}
             <div className="col-span-2 w-full flex flex-col justify-start md:col-span-1">
@@ -218,7 +218,7 @@ export const ProjectSection = () => {
                 </div>
             </div>
             <div className="col-span-2 my-5">
-                <h1 className="skew-y-3 w-max mb-5 relative isolation-auto z-10 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full hover:text-white before:-left-full before:hover:left-0 before:rounded-full before:bg-crimson before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700 inline-flex items-center justify-center px-4 py-3 font-bold text-crimson bg-white shadow-sm gap-x-2 hover:bg-gray-50 disabled:opacity-50 text-lg md:text-xl">Project Based Learning Mobile Development</h1>
+                <h1 className="skew-y-3 w-max mb-5 relative isolation-auto z-10 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full hover:text-white before:-left-full before:hover:left-0 before:rounded-full before:bg-crimson before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700 inline-flex items-center justify-center px-4 py-3 font-bold text-crimson bg-white shadow-sm gap-x-2 hover:bg-gray-50 disabled:opacity-50 text-base md:text-xl">Project Based Learning Mobile Development</h1>
             </div>
             {/* Project 3 */}
             <div className="col-span-2 w-full flex flex-col justify-start md:col-span-1">
