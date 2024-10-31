@@ -10,19 +10,6 @@ import FloatingDockTools from "./floating-tools";
 import { motion } from 'framer-motion';
 
 export function TracingBeamDemo() {
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
-        };
-
-        handleResize();
-
-        window.addEventListener('resize', handleResize);
-
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
     return (
         <TracingBeam className="px-10 md:px-6">
             <div className="max-w-2xl mx-auto antialiased pt-4 relative font-poppins text-white">

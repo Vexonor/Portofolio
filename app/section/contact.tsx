@@ -8,7 +8,7 @@ export const ContactSection = () => {
           Contact Me
         </h3>
         <p className="mt-2 text-xs md:text-base text-center text-white">
-          Let's work together on your next project
+          Let&apos;s work together on your next project
         </p>
         <div className="flex">
           {/* Instagram */}
