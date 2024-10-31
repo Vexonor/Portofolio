@@ -1,7 +1,8 @@
 "use client";
+
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, forwardRef } from "react";
 
 export const BackgroundBeamsWithCollision = ({
   children,
@@ -96,7 +97,7 @@ export const BackgroundBeamsWithCollision = ({
   );
 };
 
-const CollisionMechanism = React.forwardRef<HTMLDivElement, {
+const CollisionMechanism = forwardRef<HTMLDivElement, {
   containerRef: React.RefObject<HTMLDivElement>;
   parentRef: React.RefObject<HTMLDivElement>;
   beamOptions?: {
@@ -111,7 +112,7 @@ const CollisionMechanism = React.forwardRef<HTMLDivElement, {
     repeatDelay?: number;
   };
 }>((props, ref) => {
-  const { parentRef, containerRef, beamOptions = {} } = props; // Ambil props
+  const { parentRef, containerRef, beamOptions = {} } = props;
   const beamRef = useRef<HTMLDivElement>(null);
   const [collision, setCollision] = useState<{
     detected: boolean;
@@ -153,7 +154,6 @@ const CollisionMechanism = React.forwardRef<HTMLDivElement, {
     };
 
     const animationInterval = setInterval(checkCollision, 50);
-
     return () => clearInterval(animationInterval);
   }, [cycleCollisionDetected, containerRef]);
 
@@ -173,7 +173,7 @@ const CollisionMechanism = React.forwardRef<HTMLDivElement, {
   return (
     <>
       <motion.div
-        ref={ref} // Gunakan ref di sini
+        ref={ref || beamRef}
         key={beamKey}
         animate="animate"
         initial={{

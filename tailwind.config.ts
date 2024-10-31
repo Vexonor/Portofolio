@@ -80,7 +80,6 @@ const config = {
       },
       fontFamily: {
         "poppins" : ['Poppins', 'mono'],
-        "nunitoSans" : ['Nunito_Sans', 'sans']
       }
     },
   },

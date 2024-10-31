@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
 import PrelineScript from "./components/PrelineScript";
 import { Poppins } from '@next/font/google';
-import { Nunito_Sans } from '@next/font/google';
 import "./globals.css";
 
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700'],
-});
-const nunitoSans = Nunito_Sans({
-  subsets: ['latin'],
-  weight: ['200', '300', '400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
@@ -27,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <link rel="icon" type="image/png" href="/images/code.png" />
       <body
-        className={`${poppins.className} ${nunitoSans.className} antialiased bg-charcoal`}
+        className={`${poppins.className} antialiased bg-charcoal`}
       >
         {children}
       </body>
