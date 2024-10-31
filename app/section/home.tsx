@@ -5,11 +5,11 @@ import TypewriterEffectSmoothDemo from '../components/type-effect';
 
 export const HomeSection = () => {
     return (
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:gap-4">
             <div className="col-span-1 flex justify-center items-center">
                 <ThreeDCard />
             </div>
-            <div className="col-span-2 flex flex-col justify-center">
+            <div className="col-span-1 lg:col-span-2 flex flex-col items-center justify-center lg:items-start">
                 <BackgroundBeamsWithCollisionDemo />
                 <TypewriterEffectSmoothDemo />
             </div>
