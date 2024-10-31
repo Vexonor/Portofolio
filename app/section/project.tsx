@@ -66,7 +66,7 @@ export const ProjectSection = () => {
                         <div id="hs-basic-with-title-and-arrow-stretched-collapse-one" className="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
                             <h2 className="text-charcoal text-sm md:text-base font-semibold font-poppins">Focalors Rent</h2>
                             <p className="text-charcoal text-sm md:text-base font-poppins py-5">
-                                It's a web-based vehicle rental application that services services. Aimed at the manufacture of information systems to help tenants find better vehicle rental services and bookings
+                                It&apos;s a web-based vehicle rental application that services services. Aimed at the manufacture of information systems to help tenants find better vehicle rental services and bookings
                             </p>
                         </div>
                     </div>
