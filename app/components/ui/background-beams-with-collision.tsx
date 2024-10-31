@@ -96,24 +96,22 @@ export const BackgroundBeamsWithCollision = ({
   );
 };
 
-const CollisionMechanism = React.forwardRef<
-  HTMLDivElement,
-  {
-    containerRef: React.RefObject<HTMLDivElement>;
-    parentRef: React.RefObject<HTMLDivElement>;
-    beamOptions?: {
-      initialX?: number;
-      translateX?: number;
-      initialY?: number;
-      translateY?: number;
-      rotate?: number;
-      className?: string;
-      duration?: number;
-      delay?: number;
-      repeatDelay?: number;
-    };
-  }
->(({ parentRef, containerRef, beamOptions = {} }) => { // Hapus _ref
+const CollisionMechanism = React.forwardRef<HTMLDivElement, {
+  containerRef: React.RefObject<HTMLDivElement>;
+  parentRef: React.RefObject<HTMLDivElement>;
+  beamOptions?: {
+    initialX?: number;
+    translateX?: number;
+    initialY?: number;
+    translateY?: number;
+    rotate?: number;
+    className?: string;
+    duration?: number;
+    delay?: number;
+    repeatDelay?: number;
+  };
+}>((props, ref) => {
+  const { parentRef, containerRef, beamOptions = {} } = props; // Ambil props
   const beamRef = useRef<HTMLDivElement>(null);
   const [collision, setCollision] = useState<{
     detected: boolean;
@@ -175,8 +173,8 @@ const CollisionMechanism = React.forwardRef<
   return (
     <>
       <motion.div
+        ref={ref} // Gunakan ref di sini
         key={beamKey}
-        ref={beamRef}
         animate="animate"
         initial={{
           translateY: beamOptions.initialY || "-200px",
