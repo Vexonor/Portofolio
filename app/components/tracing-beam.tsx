@@ -90,7 +90,7 @@ const dummyContent = [
                                 <p className="mt-1 text-sm text-white">
                                     Field practice
                                 </p>
-                                <h3 className="text-sm mt-1 font-medium uppercase text-white">
+                                <h3 className="text-sm mt-1 font-medium text-white">
                                     June 2022 - December 2022
                                 </h3>
                             </div>
